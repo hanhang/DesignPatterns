@@ -1,4 +1,4 @@
-# php设计模式
+## php设计模式
 1. 创建型
     - 抽象工厂模式（Abstract Factory）
     - 建造者模式（Builder）
@@ -9,3 +9,5 @@
     - 简单工厂模式（Simple Factory）
     - 单例模式（Singleton）
     - 静态工厂模式（Static Factory）
+
+> 仅作为学习笔记，资源来源：https://learnku.com/docs/php-design-patterns/2018
