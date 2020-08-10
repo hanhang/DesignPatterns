@@ -12,4 +12,3 @@ $product = $productFact->createDigitalProduct(100);
 echo $product->calculatePrice() .  "\r\n";
 $product = $productFact->createShippableProduct(300);
 echo $product->calculatePrice() . "\r\n";
-
