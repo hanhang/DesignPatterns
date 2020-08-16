@@ -16,4 +16,9 @@ abstract class Vehicle
     {
         $this->data[$key] = $value;
     }
+
+    public function getShow()
+    {
+        var_dump($this->data);
+    }
 }
