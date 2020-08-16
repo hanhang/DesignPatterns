@@ -12,3 +12,8 @@ $product = $productFact->createDigitalProduct(100);
 echo $product->calculatePrice() .  "\r\n";
 $product = $productFact->createShippableProduct(300);
 echo $product->calculatePrice() . "\r\n";
+//建造者模式
+echo "--------建造者模式---------\r\n";
+$direct = new Patterns\Builder\Director();
+$carBuilder = new Patterns\Builder\CarBuilder();
+$direct->build($carBuilder)->getShow();
