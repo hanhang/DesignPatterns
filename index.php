@@ -17,3 +17,7 @@ echo "--------建造者模式---------\r\n";
 $direct = new Patterns\Builder\Director();
 $carBuilder = new Patterns\Builder\CarBuilder();
 $direct->build($carBuilder)->getShow();
+//工厂方法模式
+echo "--------工厂方法模式---------\r\n";
+$loggerFactory = new Patterns\FactoryMethod\StdoutLoggerFactory();
+$loggerFactory->createLogger()->log("hello world");
