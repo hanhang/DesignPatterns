@@ -1,4 +1,7 @@
 <?php
+
+use Patterns\Pool\WorkerPool;
+
 define('BASEDIR', __DIR__);
 require_once BASEDIR . '/Common/Loader.php';
 //命名空间，自动加载
@@ -21,3 +24,9 @@ $direct->build($carBuilder)->getShow();
 echo "--------工厂方法模式---------\r\n";
 $loggerFactory = new Patterns\FactoryMethod\StdoutLoggerFactory();
 $loggerFactory->createLogger()->log("hello world");
+//对象池模式
+echo "--------对象池模式---------\r\n";
+$sr = new Patterns\Pool\WorkerPool();
+$sr->get();
+echo $sr->count() . "\r\n";
+
