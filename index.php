@@ -50,3 +50,8 @@ echo "\r\n";
 echo "--------单例模式---------\r\n";
 $firstCall = Patterns\Singleton\Singleton::getInstance();
 $secondCall = Patterns\Singleton\Singleton::getInstance();
+echo "--------静态工厂模式---------\r\n";
+$factory = Patterns\StaticFactory\StaticFactory::factory('number');
+$factory->show();
+$factory = Patterns\StaticFactory\StaticFactory::factory('string');
+$factory->show();
