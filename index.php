@@ -1,7 +1,4 @@
 <?php
-
-use Patterns\Pool\WorkerPool;
-
 define('BASEDIR', __DIR__);
 require_once BASEDIR . '/Common/Loader.php';
 //命名空间，自动加载
@@ -43,3 +40,13 @@ for($i=0; $i<5; $i++){
     $book->setTitle('Bar Book No: ' . $i);
     echo $book->getTitle() . "\r\n";
 }
+//简单工厂模式
+echo "--------简单工厂模式---------\r\n";
+$factory = new Patterns\SimpleFactory\SimpleFactory();
+$bicycle = $factory->createBicycle();
+echo $bicycle->driveTo('ShangHai');
+echo "\r\n";
+//简单工厂模式
+echo "--------单例模式---------\r\n";
+$firstCall = Patterns\Singleton\Singleton::getInstance();
+$secondCall = Patterns\Singleton\Singleton::getInstance();
