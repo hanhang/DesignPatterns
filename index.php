@@ -55,3 +55,10 @@ $factory = Patterns\StaticFactory\StaticFactory::factory('number');
 $factory->show();
 $factory = Patterns\StaticFactory\StaticFactory::factory('string');
 $factory->show();
+echo "--------适配器模式---------\r\n";
+$book = new Patterns\Adapter\EBookAdapter(new Patterns\Adapter\Kindle());
+$book->open();
+$book->turnPage();
+$book->turnPage();
+echo $book->getPage();
+
