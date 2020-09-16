@@ -61,4 +61,8 @@ $book->open();
 $book->turnPage();
 $book->turnPage();
 echo $book->getPage();
-
+echo "--------桥梁模式---------\r\n";
+$service = new Patterns\Bridge\HelloWorldService(new Patterns\Bridge\PlainTextFormatter());
+echo $service->get() . "\r\n";
+$service = new Patterns\Bridge\HelloWorldService(new Patterns\Bridge\HtmlFormatter());
+echo $service->get();
