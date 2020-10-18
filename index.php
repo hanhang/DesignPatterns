@@ -66,3 +66,4 @@ $service = new Patterns\Bridge\HelloWorldService(new Patterns\Bridge\PlainTextFo
 echo $service->get() . "\r\n";
 $service = new Patterns\Bridge\HelloWorldService(new Patterns\Bridge\HtmlFormatter());
 echo $service->get();
+echo "hello";
